@@ -11,7 +11,7 @@ fun main(args: Array<String>) {
 
 class One {
     companion object {
-        val PI = 3.14
+        const val PI = 3.14
         fun multi(arg1: Int, arg2: Int, arg3: Int)= arg1 * arg2 * arg3
         fun divider(arg1: Int, arg2: Int) =
             println("Input $arg1, $arg2 - quotient of division: ${arg1 / arg2}, remainder: ${arg1 % arg2}")
