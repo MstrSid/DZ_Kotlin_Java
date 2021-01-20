@@ -11,11 +11,13 @@ class ShowTime {
     static void showTime() {
         OUTER:
         for (int h = 0; h < 6; h++) {
-            for (int m = 0; m < 60; m++) {
+            //MIDDLE:
+            for (int m = 0; m < 60; m++) { //middle
                 if (h > 1 && m % 10 == 0 && m > 0) {
                     break OUTER;
                 }
-                for (int s = 0; s < 60; s++) {
+                //INNER:
+                for (int s = 0; s < 60; s++) { //inner
                     if (s * h > m) {
                         continue;
                     }
